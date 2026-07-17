@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "story": "私たちについて",
+    "rooms": "客室",
+    "experience": "体験",
+    "gallery": "ギャラリー",
+    "contact": "お問い合わせ",
+    "book": "予約する"
+  },
+  "hero": {
+    "eyebrow": "ハノイの中心にある静かな居場所",
+    "title": "ゆっくり滞在し、\nハノイを感じる。",
+    "description": "やわらかな光で一日が始まり、穏やかに夜を迎える。温かくプライベートな滞在をお届けします。",
+    "primary": "客室を見る",
+    "secondary": "BB Homesの物語",
+    "scroll": "スクロールして見る"
+  },
+  "booking": {
+    "arrival": "チェックイン",
+    "departure": "チェックアウト",
+    "guests": "ご宿泊人数",
+    "guestValue": "大人2名",
+    "room": "客室タイプ",
+    "roomValue": "すべての客室",
+    "action": "空室を確認",
+    "mobile": "ご滞在を予約"
+  },
+  "intro": {
+    "eyebrow": "BB Homes · Hanoi",
+    "title": "小さな居場所、\n心に残る時間。",
+    "body": "ハノイの緑豊かな路地に佇むBB Homes。明るい木のインテリア、大きな窓、心を込めたおもてなしで、初めてでも懐かしく感じられる滞在をつくります。",
+    "quote": "丁寧に整えられたシンプルなものの中に、本当の豊かさがあると私たちは考えます。",
+    "link": "私たちの物語"
+  },
+  "rooms": {
+    "eyebrow": "あなたらしい休息を",
+    "title": "光に満ちた\n客室",
+    "description": "自然な色合い、必要な快適さ、そして街へのそれぞれの眺め。どの客室も静かな休息のために整えられています。",
+    "viewAll": "すべての客室",
+    "details": "詳細を見る",
+    "items": [
+      { "name": "Cozy Room", "meta": "2名 · クイーンベッド", "note": "温かくプライベート" },
+      { "name": "Balcony Room", "meta": "2名 · バルコニー", "note": "ハノイの緑を望む" },
+      { "name": "City View Studio", "meta": "2名 · リビングスペース", "note": "ゆったりと穏やか" }
+    ]
+  },
+  "experience": {
+    "eyebrow": "階下で楽しむ食の時間",
+    "title": "ゆっくり過ごす夜の\n小さな居酒屋",
+    "body": "心地よい夜のために遠くへ行く必要はありません。階下の居酒屋には、やわらかな灯りと木のテーブル、食後も続く会話があります。",
+    "link": "体験を詳しく見る",
+    "caption": "Izakaya · BB Homes 地下階"
+  },
+  "gallery": {
+    "eyebrow": "BB Homesで出会う景色",
+    "title": "記憶に残る空間",
+    "link": "ギャラリーを見る"
+  },
+  "closing": {
+    "eyebrow": "旅はここから始まります",
+    "title": "ハノイが待っています。",
+    "body": "お部屋を選んだら、あとは私たちにお任せください。",
+    "action": "予約リクエスト"
+  },
+  "footer": {
+    "tagline": "A quiet stay in Hanoi",
+    "address": "Đào Tấn · Ba Đình · Hà Nội",
+    "copyright": "BB Homes. All rights reserved.",
+    "backTop": "ページ上部へ"
+  }
+}

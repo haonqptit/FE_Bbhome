@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "story": "Câu chuyện",
+    "rooms": "Phòng nghỉ",
+    "experience": "Trải nghiệm",
+    "gallery": "Hình ảnh",
+    "contact": "Liên hệ",
+    "book": "Đặt phòng"
+  },
+  "hero": {
+    "eyebrow": "Một khoảng lặng giữa lòng Hà Nội",
+    "title": "Ở lại thật chậm.\nChạm vào Hà Nội.",
+    "description": "Không gian lưu trú riêng tư, ấm áp và vừa đủ — nơi mỗi ngày bắt đầu bằng ánh sáng dịu và kết thúc trong sự bình yên.",
+    "primary": "Khám phá phòng",
+    "secondary": "Câu chuyện BB Homes",
+    "scroll": "Cuộn để khám phá"
+  },
+  "booking": {
+    "arrival": "Ngày đến",
+    "departure": "Ngày đi",
+    "guests": "Khách lưu trú",
+    "guestValue": "2 người lớn",
+    "room": "Hạng phòng",
+    "roomValue": "Tất cả phòng",
+    "action": "Kiểm tra phòng",
+    "mobile": "Đặt kỳ nghỉ của bạn"
+  },
+  "intro": {
+    "eyebrow": "BB Homes · Hanoi",
+    "title": "Một chốn ở nhỏ,\nnhững trải nghiệm thật.",
+    "body": "Ẩn mình trong con phố xanh mát của Hà Nội, BB Homes mang đến nhịp nghỉ vừa đủ riêng tư. Nội thất gỗ sáng, những ô cửa rộng và sự chăm sóc chân thành tạo nên cảm giác thân thuộc ngay từ lần đầu ghé thăm.",
+    "quote": "Chúng tôi tin rằng sự sang trọng nằm trong những điều giản dị được chăm chút kỹ lưỡng.",
+    "link": "Khám phá câu chuyện"
+  },
+  "rooms": {
+    "eyebrow": "Nghỉ ngơi theo cách của bạn",
+    "title": "Những căn phòng\nđầy ánh sáng",
+    "description": "Mỗi phòng là một khoảng nghỉ yên tĩnh với bảng màu tự nhiên, tiện nghi thiết yếu và góc nhìn riêng ra thành phố.",
+    "viewAll": "Xem tất cả phòng",
+    "details": "Xem chi tiết",
+    "items": [
+      { "name": "Cozy Room", "meta": "2 khách · Giường queen", "note": "Ấm áp & riêng tư" },
+      { "name": "Balcony Room", "meta": "2 khách · Ban công", "note": "Khoảng xanh Hà Nội" },
+      { "name": "City View Studio", "meta": "2 khách · Khu tiếp khách", "note": "Rộng rãi & thư thái" }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Ẩm thực ngay dưới hiên nhà",
+    "title": "Một góc Izakaya\ncho buổi tối chậm rãi",
+    "body": "Không cần đi xa để tìm một buổi tối ấm cúng. Không gian Izakaya ở tầng dưới mang tinh thần Nhật Bản gần gũi — ánh đèn dịu, bàn gỗ và những câu chuyện kéo dài sau bữa ăn.",
+    "link": "Khám phá trải nghiệm",
+    "caption": "Izakaya · Tầng hầm BB Homes"
+  },
+  "gallery": {
+    "eyebrow": "Những lát cắt tại BB Homes",
+    "title": "Không gian để nhớ",
+    "link": "Xem thư viện ảnh"
+  },
+  "closing": {
+    "eyebrow": "Kỳ nghỉ của bạn bắt đầu từ đây",
+    "title": "Hà Nội đang chờ bạn.",
+    "body": "Chọn một căn phòng, để phần còn lại chúng tôi chăm sóc.",
+    "action": "Gửi yêu cầu đặt phòng"
+  },
+  "footer": {
+    "tagline": "A quiet stay in Hanoi",
+    "address": "Đào Tấn · Ba Đình · Hà Nội",
+    "copyright": "BB Homes. Mọi quyền được bảo lưu.",
+    "backTop": "Về đầu trang"
+  }
+}
