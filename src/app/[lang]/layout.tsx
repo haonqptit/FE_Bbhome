@@ -16,6 +16,11 @@ const jaSansFont = Noto_Sans_JP({ subsets: ["latin"], weight: ["300", "400", "50
 export const metadata: Metadata = {
   title: { default: "BB Homes Hanoi — Quiet Luxury Stay", template: "%s | BB Homes Hanoi" },
   description: "A quiet, warm boutique stay in the heart of Hanoi.",
+  icons: {
+    icon: "/Logo.png",
+    shortcut: "/Logo.png",
+    apple: "/Logo.png",
+  },
 };
 
 export function generateStaticParams() {
