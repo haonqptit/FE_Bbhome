@@ -1,72 +1,311 @@
 {
   "nav": {
     "home": "Trang chủ",
-    "story": "Câu chuyện",
+    "about": "Giới thiệu",
     "rooms": "Phòng nghỉ",
-    "experience": "Trải nghiệm",
+    "services": "Dịch vụ",
     "gallery": "Hình ảnh",
     "contact": "Liên hệ",
     "book": "Đặt phòng"
   },
+  "common": {
+    "bookNow": "Đặt phòng ngay",
+    "viewDetails": "Xem chi tiết",
+    "viewAll": "Xem tất cả",
+    "learnMore": "Tìm hiểu thêm",
+    "from": "Từ",
+    "perNight": "/ đêm",
+    "guests": "Khách",
+    "size": "Diện tích",
+    "bed": "Giường",
+    "floor": "Tầng",
+    "view": "Hướng nhìn",
+    "scroll": "Cuộn để khám phá",
+    "backTop": "Về đầu trang",
+    "close": "Đóng",
+    "next": "Tiếp",
+    "prev": "Trước",
+    "menu": "Menu",
+    "language": "日本語"
+  },
   "hero": {
-    "eyebrow": "Một khoảng lặng giữa lòng Hà Nội",
-    "title": "Ở lại thật chậm.\nChạm vào Hà Nội.",
-    "description": "Không gian lưu trú riêng tư, ấm áp và vừa đủ — nơi mỗi ngày bắt đầu bằng ánh sáng dịu và kết thúc trong sự bình yên.",
-    "primary": "Khám phá phòng",
-    "secondary": "Câu chuyện BB Homes",
-    "scroll": "Cuộn để khám phá"
+    "eyebrow": "Boutique stay · Ba Đình · Hà Nội",
+    "title": "Ở lại thật chậm,\nchạm vào Hà Nội.",
+    "description": "Một chốn nghỉ nhỏ ấm áp giữa con phố xanh — nơi mỗi ngày bắt đầu bằng ánh sáng dịu và kết thúc bên bữa tối izakaya dưới hiên nhà.",
+    "primary": "Khám phá phòng nghỉ",
+    "secondary": "Câu chuyện của chúng tôi"
   },
-  "booking": {
-    "arrival": "Ngày đến",
-    "departure": "Ngày đi",
-    "guests": "Khách lưu trú",
-    "guestValue": "2 người lớn",
-    "room": "Hạng phòng",
-    "roomValue": "Tất cả phòng",
-    "action": "Kiểm tra phòng",
-    "mobile": "Đặt kỳ nghỉ của bạn"
-  },
-  "intro": {
-    "eyebrow": "BB Homes · Hanoi",
-    "title": "Một chốn ở nhỏ,\nnhững trải nghiệm thật.",
-    "body": "Ẩn mình trong con phố xanh mát của Hà Nội, BB Homes mang đến nhịp nghỉ vừa đủ riêng tư. Nội thất gỗ sáng, những ô cửa rộng và sự chăm sóc chân thành tạo nên cảm giác thân thuộc ngay từ lần đầu ghé thăm.",
-    "quote": "Chúng tôi tin rằng sự sang trọng nằm trong những điều giản dị được chăm chút kỹ lưỡng.",
-    "link": "Khám phá câu chuyện"
+  "home": {
+    "stats": [
+      { "value": "04", "label": "Hạng phòng riêng tư" },
+      { "value": "08", "label": "Tầng giữa lòng Ba Đình" },
+      { "value": "01", "label": "Izakaya dưới hiên nhà" }
+    ],
+    "intro": {
+      "eyebrow": "BB Homes · Hanoi",
+      "title": "Một chốn ở nhỏ,\nnhững trải nghiệm thật.",
+      "body": "Ẩn mình trong con phố xanh mát của khu Đào Tấn, BB Homes mang đến nhịp nghỉ vừa đủ riêng tư. Nội thất gỗ sáng, những ô cửa rộng và sự chăm sóc chân thành tạo nên cảm giác thân thuộc ngay từ lần đầu ghé thăm.",
+      "quote": "Sự sang trọng nằm trong những điều giản dị được chăm chút kỹ lưỡng.",
+      "link": "Về BB Homes"
+    },
+    "rooms": {
+      "eyebrow": "Phòng nghỉ",
+      "title": "Những căn phòng\nđầy ánh sáng",
+      "description": "Bốn hạng phòng, mỗi phòng một cá tính — từ căn studio tầng cao nhìn ra thành phố đến phòng ban công ngập khoảng xanh Hà Nội.",
+      "signature": "Phòng signature"
+    },
+    "experience": {
+      "eyebrow": "Trải nghiệm riêng có",
+      "title": "Một góc Izakaya\ncho buổi tối chậm rãi",
+      "body": "Không cần đi xa để tìm một buổi tối ấm cúng. Không gian izakaya ở tầng trệt mang tinh thần Nhật Bản gần gũi — ánh đèn dịu, bàn gỗ và những câu chuyện kéo dài sau bữa ăn.",
+      "link": "Khám phá dịch vụ",
+      "caption": "Izakaya · Tầng trệt BB Homes"
+    },
+    "gallery": {
+      "eyebrow": "Không gian",
+      "title": "Những lát cắt\nđáng nhớ",
+      "link": "Xem thư viện ảnh"
+    },
+    "cta": {
+      "eyebrow": "Kỳ nghỉ của bạn bắt đầu từ đây",
+      "title": "Hà Nội đang chờ bạn.",
+      "body": "Chọn một căn phòng, để phần còn lại chúng tôi chăm sóc.",
+      "action": "Gửi yêu cầu đặt phòng"
+    }
   },
   "rooms": {
-    "eyebrow": "Nghỉ ngơi theo cách của bạn",
-    "title": "Những căn phòng\nđầy ánh sáng",
-    "description": "Mỗi phòng là một khoảng nghỉ yên tĩnh với bảng màu tự nhiên, tiện nghi thiết yếu và góc nhìn riêng ra thành phố.",
-    "viewAll": "Xem tất cả phòng",
-    "details": "Xem chi tiết",
-    "items": [
-      { "name": "Cozy Room", "meta": "2 khách · Giường queen", "note": "Ấm áp & riêng tư" },
-      { "name": "Balcony Room", "meta": "2 khách · Ban công", "note": "Khoảng xanh Hà Nội" },
-      { "name": "City View Studio", "meta": "2 khách · Khu tiếp khách", "note": "Rộng rãi & thư thái" }
-    ]
+    "hero": {
+      "eyebrow": "Phòng nghỉ",
+      "title": "Nghỉ ngơi\ntheo cách của bạn",
+      "description": "Bốn hạng phòng được chăm chút từng chi tiết — bảng màu tự nhiên, gỗ sáng và ánh sáng ngày tràn qua ô cửa lớn."
+    },
+    "items": {
+      "studio-802": {
+        "name": "Signature Studio",
+        "tagline": "Tầng 8 · Góc nhìn thành phố",
+        "summary": "Căn studio rộng nhất của BB Homes với khu tiếp khách riêng, bếp nhỏ và khung cửa lớn ôm trọn nhịp sống Hà Nội từ tầng cao.",
+        "description": "Signature Studio là nơi chúng tôi gửi gắm trọn vẹn tinh thần BB Homes: một không gian mở với khu ngủ, góc làm việc và khu tiếp khách liền mạch. Ánh sáng ngày đi qua dải cửa kính lớn, chạm vào sàn gỗ sáng và những món nội thất được chọn kỹ. Buổi tối, thành phố lên đèn ngay dưới ô cửa — một Hà Nội rất khác, tĩnh lặng và lấp lánh.",
+        "bedType": "Giường King · 1m8",
+        "viewType": "Toàn cảnh thành phố",
+        "amenities": ["Khu tiếp khách riêng", "Bếp nhỏ đầy đủ dụng cụ", "Máy pha cà phê", "Smart TV 55\"", "Két an toàn", "Điều hòa hai chiều", "Máy sấy tóc & bàn ủi", "Nước khoáng miễn phí mỗi ngày"]
+      },
+      "cityview-801": {
+        "name": "City View Suite",
+        "tagline": "Tầng 8 · Ban mai trên cao",
+        "summary": "Phòng suite tầng cao với góc đọc sách cạnh cửa sổ — nơi đón ánh ban mai và bao quát những mái nhà Ba Đình.",
+        "description": "City View Suite dành cho những ai yêu buổi sáng. Bàn trà nhỏ kê sát cửa kính là chỗ ngồi được yêu thích nhất — nơi bạn có thể nhâm nhi cà phê và nhìn thành phố thức dậy. Không gian ngủ tách biệt vừa đủ, chăn ga cotton mềm và ánh đèn vàng dịu cho giấc ngủ sâu.",
+        "bedType": "Giường Queen · 1m6",
+        "viewType": "Hướng phố · Đông Nam",
+        "amenities": ["Góc đọc sách cạnh cửa sổ", "Bàn làm việc", "Máy pha cà phê", "Smart TV 50\"", "Điều hòa hai chiều", "Tủ lạnh mini", "Máy sấy tóc", "Nước khoáng miễn phí mỗi ngày"]
+      },
+      "balcony-302": {
+        "name": "Balcony Room",
+        "tagline": "Tầng 3 · Khoảng xanh riêng",
+        "summary": "Ban công riêng nhìn xuống tán cây xanh của con phố — chỗ ngồi lý tưởng cho tách trà chiều và những trang sách.",
+        "description": "Balcony Room mang khoảng xanh Hà Nội đến sát bên bạn. Ban công nhỏ với bộ bàn ghế gỗ là nơi thời gian trôi chậm lại — buổi sáng nghe tiếng phố thức giấc, buổi chiều đón gió qua tán cây. Bên trong, tông gỗ ấm và vải linen tự nhiên giữ trọn cảm giác thư thái.",
+        "bedType": "Giường Queen · 1m6",
+        "viewType": "Ban công · Tán cây xanh",
+        "amenities": ["Ban công riêng có bàn ghế", "Cửa kính lớn đón sáng", "Smart TV 43\"", "Điều hòa hai chiều", "Tủ lạnh mini", "Máy sấy tóc", "Ấm đun & bộ trà", "Nước khoáng miễn phí mỗi ngày"]
+      },
+      "cozy-301": {
+        "name": "Cozy Room",
+        "tagline": "Tầng 3 · Ấm áp & riêng tư",
+        "summary": "Căn phòng nhỏ ấm cúng với tông gỗ sáng — lựa chọn vừa vặn cho chuyến đi hai người giữa lòng thành phố.",
+        "description": "Cozy Room chứng minh rằng một không gian nhỏ vẫn có thể rất đủ đầy. Mỗi mét vuông được sắp xếp khéo léo: giường êm kê sát ô cửa lấy sáng, góc để hành lý gọn gàng và phòng tắm ốp đá ấm. Một chốn về đơn giản, sạch sẽ và yên tĩnh sau ngày dài rong ruổi Hà Nội.",
+        "bedType": "Giường Queen · 1m6",
+        "viewType": "Hướng phố yên tĩnh",
+        "amenities": ["Cửa sổ lấy sáng tự nhiên", "Smart TV 43\"", "Điều hòa hai chiều", "Tủ lạnh mini", "Máy sấy tóc", "Ấm đun & bộ trà", "Đồ vệ sinh cá nhân", "Nước khoáng miễn phí mỗi ngày"]
+      }
+    },
+    "detail": {
+      "amenitiesTitle": "Tiện nghi trong phòng",
+      "galleryTitle": "Không gian phòng",
+      "otherRooms": "Những phòng khác",
+      "bookTitle": "Sẵn sàng cho kỳ nghỉ?",
+      "bookBody": "Gửi yêu cầu đặt phòng, chúng tôi sẽ xác nhận trong vòng 24 giờ.",
+      "bookAction": "Đặt phòng này",
+      "backToRooms": "Tất cả phòng nghỉ"
+    }
   },
-  "experience": {
-    "eyebrow": "Ẩm thực ngay dưới hiên nhà",
-    "title": "Một góc Izakaya\ncho buổi tối chậm rãi",
-    "body": "Không cần đi xa để tìm một buổi tối ấm cúng. Không gian Izakaya ở tầng dưới mang tinh thần Nhật Bản gần gũi — ánh đèn dịu, bàn gỗ và những câu chuyện kéo dài sau bữa ăn.",
-    "link": "Khám phá trải nghiệm",
-    "caption": "Izakaya · Tầng hầm BB Homes"
+  "about": {
+    "hero": {
+      "eyebrow": "Về chúng tôi",
+      "title": "Câu chuyện về\nmột ngôi nhà",
+      "description": "BB Homes bắt đầu từ một điều giản dị: mong muốn khách phương xa được ở lại Hà Nội như trở về nhà."
+    },
+    "story": {
+      "eyebrow": "Khởi đầu",
+      "title": "Từ một ngôi nhà\ngiữa phố Đào Tấn",
+      "paragraphs": [
+        "BB Homes nằm trong con phố nhỏ rợp bóng cây của khu Đào Tấn — nơi nhịp sống Hà Nội chậm hơn một nhịp so với phố cổ tấp nập. Chúng tôi cải tạo ngôi nhà tám tầng này thành một chốn lưu trú boutique, giữ lại sự ấm áp của một mái nhà và thêm vào những tiện nghi của một khách sạn được chăm chút.",
+        "Mỗi căn phòng được thiết kế quanh ánh sáng tự nhiên: cửa kính lớn, rèm hai lớp, tông gỗ sáng và vải tự nhiên. Chúng tôi tin rằng sự sang trọng không nằm ở đèn chùm hay đá cẩm thạch, mà ở giấc ngủ thật sâu, vòi nước thật ấm và sự yên tĩnh thật trọn vẹn.",
+        "Dưới tầng trệt, góc izakaya nhỏ mang tinh thần Nhật Bản — di sản từ những vị khách Nhật đầu tiên đã gắn bó với BB Homes. Đó là nơi câu chuyện giữa chủ nhà và khách phương xa bắt đầu, bên chén rượu ấm và những món ăn giản dị."
+      ]
+    },
+    "values": {
+      "eyebrow": "Điều chúng tôi tin",
+      "title": "Ba điều làm nên\nBB Homes",
+      "items": [
+        { "title": "Tĩnh lặng", "body": "Giữa thành phố ồn ã, chúng tôi giữ cho từng căn phòng một sự yên tĩnh trọn vẹn — từ cách âm, ánh sáng đến nhịp phục vụ không làm phiền." },
+        { "title": "Chân thành", "body": "Không kịch bản phục vụ, không nụ cười công nghiệp. Chúng tôi đón khách như đón một người bạn ghé thăm nhà." },
+        { "title": "Tinh giản", "body": "Mỗi món đồ trong phòng đều có lý do tồn tại. Chúng tôi chọn ít hơn, nhưng tốt hơn — từ tấm ga giường đến hạt cà phê buổi sáng." }
+      ]
+    },
+    "space": {
+      "eyebrow": "Không gian",
+      "title": "Được thiết kế\nquanh ánh sáng",
+      "body": "Tám tầng nhà, bốn hạng phòng và một góc izakaya — tất cả xoay quanh thứ quý giá nhất của kiến trúc Hà Nội: ánh sáng ngày dịu dàng và những khoảng xanh bất chợt."
+    },
+    "cta": {
+      "title": "Đến và ở lại như ở nhà.",
+      "action": "Xem phòng nghỉ"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Dịch vụ",
+      "title": "Được chăm sóc,\nkhông bị làm phiền",
+      "description": "Từ bữa tối izakaya ấm cúng đến chuyến xe đón sân bay lúc sớm — mọi dịch vụ đều xoay quanh nhịp nghỉ của bạn."
+    },
+    "izakaya": {
+      "eyebrow": "Tâm điểm của ngôi nhà",
+      "title": "Izakaya\ndưới hiên nhà",
+      "body": "Góc izakaya nhỏ ở tầng trệt là nơi BB Homes trở nên khác biệt. Thực đơn giản dị theo mùa, vài chỗ ngồi quanh quầy gỗ và ánh đèn vàng ấm — không gian dành cho những buổi tối không vội vã, dù bạn đi một mình hay cùng bạn đồng hành.",
+      "hours": "Mở cửa 17:30 – 22:30 · Thứ Ba đến Chủ Nhật",
+      "note": "Khách lưu trú được ưu tiên chỗ ngồi — đặt trước tại quầy lễ tân."
+    },
+    "list": {
+      "eyebrow": "Dịch vụ lưu trú",
+      "title": "Những điều nhỏ\nđược lo trọn",
+      "items": [
+        { "title": "Đưa đón sân bay", "body": "Xe riêng đón tiễn sân bay Nội Bài, đặt trước tối thiểu 12 giờ. Tài xế chờ sẵn với bảng tên của bạn." },
+        { "title": "Bữa sáng tại phòng", "body": "Bữa sáng kiểu Việt hoặc kiểu Nhật, chuẩn bị mỗi sáng và mang lên tận phòng trong khung 7:00 – 9:30." },
+        { "title": "Giặt ủi trong ngày", "body": "Gửi trước 9:00, nhận lại trước 19:00 cùng ngày — được gấp và bọc giấy cẩn thận." },
+        { "title": "Gợi ý hành trình", "body": "Bản đồ Hà Nội do chính chúng tôi vẽ: quán phở gia truyền, tiệm cà phê trong ngõ và những đoạn phố đáng đi bộ nhất." },
+        { "title": "Thuê xe đạp & xe máy", "body": "Xe đạp miễn phí cho khách lưu trú; xe máy thuê theo ngày kèm mũ bảo hiểm và chỉ dẫn tận tình." },
+        { "title": "Lưu trú dài ngày", "body": "Ưu đãi riêng cho kỳ lưu trú từ 7 đêm — dọn phòng theo lịch riêng và góc làm việc được chuẩn bị sẵn." }
+      ]
+    },
+    "cta": {
+      "title": "Cần điều gì khác? Cứ hỏi chúng tôi.",
+      "action": "Liên hệ"
+    }
   },
   "gallery": {
-    "eyebrow": "Những lát cắt tại BB Homes",
-    "title": "Không gian để nhớ",
-    "link": "Xem thư viện ảnh"
+    "hero": {
+      "eyebrow": "Thư viện ảnh",
+      "title": "Không gian\nđể nhớ",
+      "description": "Những lát cắt chân thực tại BB Homes — không dàn dựng, chỉ có ánh sáng thật và những góc nhà được yêu."
+    },
+    "filters": {
+      "all": "Tất cả",
+      "rooms": "Phòng nghỉ",
+      "spaces": "Ngôi nhà",
+      "izakaya": "Izakaya"
+    },
+    "hint": "Chạm vào ảnh để xem toàn màn hình"
   },
-  "closing": {
-    "eyebrow": "Kỳ nghỉ của bạn bắt đầu từ đây",
-    "title": "Hà Nội đang chờ bạn.",
-    "body": "Chọn một căn phòng, để phần còn lại chúng tôi chăm sóc.",
-    "action": "Gửi yêu cầu đặt phòng"
+  "contact": {
+    "hero": {
+      "eyebrow": "Liên hệ",
+      "title": "Chúng tôi\nluôn ở đây",
+      "description": "Một câu hỏi nhỏ hay một kế hoạch dài ngày — hãy nhắn cho chúng tôi, phản hồi luôn đến trong ngày."
+    },
+    "info": {
+      "title": "BB Homes Hanoi",
+      "addressLabel": "Địa chỉ",
+      "address": "Ngõ 82 Đào Tấn, Ba Đình, Hà Nội",
+      "phoneLabel": "Điện thoại",
+      "phone": "+84 24 3760 8866",
+      "emailLabel": "Email",
+      "email": "stay@bbhomes.vn",
+      "hoursLabel": "Lễ tân",
+      "hours": "24/7 · Nhận phòng 14:00 · Trả phòng 12:00",
+      "mapNote": "Cách hồ Hoàn Kiếm 15 phút · Sân bay Nội Bài 35 phút"
+    },
+    "form": {
+      "title": "Gửi lời nhắn",
+      "name": "Họ và tên",
+      "namePlaceholder": "Nguyễn Minh An",
+      "email": "Email",
+      "emailPlaceholder": "minhan@email.com",
+      "subject": "Chủ đề",
+      "subjectPlaceholder": "Hỏi về kỳ lưu trú tháng tới",
+      "message": "Lời nhắn",
+      "messagePlaceholder": "Chúng tôi có thể giúp gì cho bạn?",
+      "submit": "Gửi lời nhắn",
+      "sending": "Đang gửi…",
+      "success": {
+        "title": "Đã nhận được lời nhắn của bạn",
+        "body": "Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi qua email trong hôm nay.",
+        "again": "Gửi lời nhắn khác"
+      },
+      "errors": {
+        "required": "Vui lòng điền thông tin này",
+        "email": "Email chưa đúng định dạng"
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "items": [
+        { "q": "Giờ nhận và trả phòng?", "a": "Nhận phòng từ 14:00, trả phòng trước 12:00. Nếu bạn đến sớm hoặc về muộn, hãy báo trước — chúng tôi luôn cố gắng thu xếp." },
+        { "q": "Có chỗ đỗ xe không?", "a": "Có chỗ để xe máy trong nhà. Với ô tô, chúng tôi sẽ hướng dẫn bãi đỗ an toàn cách 200m." },
+        { "q": "Izakaya có phục vụ khách ngoài không?", "a": "Có, nhưng số chỗ giới hạn. Khách lưu trú luôn được ưu tiên — bạn chỉ cần báo lễ tân trước giờ mở cửa." }
+      ]
+    }
+  },
+  "booking": {
+    "hero": {
+      "eyebrow": "Đặt phòng",
+      "title": "Bắt đầu\nkỳ nghỉ của bạn",
+      "description": "Điền thông tin bên dưới, chúng tôi sẽ xác nhận tình trạng phòng và giá tốt nhất trong vòng 24 giờ."
+    },
+    "form": {
+      "stayTitle": "Thời gian lưu trú",
+      "checkin": "Ngày nhận phòng",
+      "checkout": "Ngày trả phòng",
+      "guests": "Số khách",
+      "guestsSuffix": "khách",
+      "roomTitle": "Chọn hạng phòng",
+      "roomAny": "Để BB Homes gợi ý",
+      "contactTitle": "Thông tin liên hệ",
+      "name": "Họ và tên",
+      "namePlaceholder": "Nguyễn Minh An",
+      "email": "Email",
+      "emailPlaceholder": "minhan@email.com",
+      "phone": "Số điện thoại",
+      "phonePlaceholder": "+84 912 345 678",
+      "notes": "Ghi chú thêm",
+      "notesPlaceholder": "Giờ đến dự kiến, yêu cầu đặc biệt…",
+      "submit": "Gửi yêu cầu đặt phòng",
+      "sending": "Đang gửi…",
+      "disclaimer": "Đây là yêu cầu đặt phòng, chưa phải xác nhận. Chúng tôi sẽ email xác nhận kèm hướng dẫn thanh toán.",
+      "success": {
+        "title": "Yêu cầu đã được gửi",
+        "body": "Cảm ơn bạn! Chúng tôi sẽ kiểm tra tình trạng phòng và phản hồi qua email trong vòng 24 giờ.",
+        "back": "Về trang chủ"
+      },
+      "errors": {
+        "required": "Vui lòng điền thông tin này",
+        "email": "Email chưa đúng định dạng",
+        "dates": "Ngày trả phòng phải sau ngày nhận phòng"
+      }
+    }
   },
   "footer": {
     "tagline": "A quiet stay in Hanoi",
-    "address": "Đào Tấn · Ba Đình · Hà Nội",
-    "copyright": "BB Homes. Mọi quyền được bảo lưu.",
-    "backTop": "Về đầu trang"
+    "about": "Chốn lưu trú boutique giữa con phố xanh Đào Tấn — nơi sự sang trọng nằm trong những điều giản dị được chăm chút kỹ lưỡng.",
+    "contactTitle": "Liên hệ",
+    "address": "Ngõ 82 Đào Tấn, Ba Đình, Hà Nội",
+    "phone": "+84 24 3760 8866",
+    "email": "stay@bbhomes.vn",
+    "hoursTitle": "Giờ đón khách",
+    "checkin": "Nhận phòng 14:00",
+    "checkout": "Trả phòng 12:00",
+    "reception": "Lễ tân 24/7",
+    "navTitle": "Khám phá",
+    "bookTitle": "Sẵn sàng cho Hà Nội?",
+    "bookBody": "Gửi yêu cầu hôm nay, xác nhận trong 24 giờ.",
+    "copyright": "BB Homes. Mọi quyền được bảo lưu."
   }
 }
