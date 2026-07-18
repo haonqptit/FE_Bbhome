@@ -14,16 +14,16 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
 
   const heroSlides = [
     {
+      src: "/ImageBbhomes/ImageHotelBasement/1.jpg",
+      alt: locale === "vi" ? "Góc izakaya ấm cúng" : "あたたかな居酒屋の一角",
+    },
+    {
       src: "/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_resize.jpg",
       alt: locale === "vi" ? "Mặt tiền BB Homes về đêm" : "夜のBB Homes外観",
     },
     {
       src: "/ImageBbhomes/ImageRoom/802_BBHotel_resize.jpg",
       alt: locale === "vi" ? "Signature Studio ngập ánh sáng" : "光あふれるシグネチャースタジオ",
-    },
-    {
-      src: "/ImageBbhomes/ImageHotelBasement/1.jpg",
-      alt: locale === "vi" ? "Góc izakaya ấm cúng" : "あたたかな居酒屋の一角",
     },
   ];
 

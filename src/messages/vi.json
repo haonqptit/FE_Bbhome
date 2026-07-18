@@ -37,9 +37,9 @@
   },
   "home": {
     "stats": [
-      { "value": "04", "label": "Hạng phòng riêng tư" },
-      { "value": "08", "label": "Tầng giữa lòng Ba Đình" },
-      { "value": "01", "label": "Izakaya dưới hiên nhà" }
+      { "value": "xx", "label": "Hạng phòng riêng tư" },
+      { "value": "xx", "label": "Tầng giữa lòng Ba Đình" },
+      { "value": "xx", "label": "Izakaya dưới hiên nhà" }
     ],
     "intro": {
       "eyebrow": "BB Homes · Hanoi",
@@ -51,7 +51,7 @@
     "rooms": {
       "eyebrow": "Phòng nghỉ",
       "title": "Những căn phòng\nđầy ánh sáng",
-      "description": "Bốn hạng phòng, mỗi phòng một cá tính — từ căn studio tầng cao nhìn ra thành phố đến phòng ban công ngập khoảng xanh Hà Nội.",
+      "description": "X hạng phòng, mỗi phòng một cá tính — từ căn studio tầng cao nhìn ra thành phố đến phòng ban công ngập khoảng xanh Hà Nội.",
       "signature": "Phòng signature"
     },
     "experience": {
@@ -77,7 +77,7 @@
     "hero": {
       "eyebrow": "Phòng nghỉ",
       "title": "Nghỉ ngơi\ntheo cách của bạn",
-      "description": "Bốn hạng phòng được chăm chút từng chi tiết — bảng màu tự nhiên, gỗ sáng và ánh sáng ngày tràn qua ô cửa lớn."
+      "description": "x hạng phòng được chăm chút từng chi tiết — bảng màu tự nhiên, gỗ sáng và ánh sáng ngày tràn qua ô cửa lớn."
     },
     "items": {
       "studio-802": {
@@ -154,7 +154,7 @@
     "space": {
       "eyebrow": "Không gian",
       "title": "Được thiết kế\nquanh ánh sáng",
-      "body": "Tám tầng nhà, bốn hạng phòng và một góc izakaya — tất cả xoay quanh thứ quý giá nhất của kiến trúc Hà Nội: ánh sáng ngày dịu dàng và những khoảng xanh bất chợt."
+      "body": "X tầng nhà, x hạng phòng và một góc izakaya — tất cả xoay quanh thứ quý giá nhất của kiến trúc Hà Nội: ánh sáng ngày dịu dàng và những khoảng xanh bất chợt."
     },
     "cta": {
       "title": "Đến và ở lại như ở nhà.",
@@ -216,9 +216,9 @@
       "addressLabel": "Địa chỉ",
       "address": "Ngõ 82 Đào Tấn, Ba Đình, Hà Nội",
       "phoneLabel": "Điện thoại",
-      "phone": "+84 24 3760 8866",
+      "phone": "+84 844 565 665",
       "emailLabel": "Email",
-      "email": "stay@bbhomes.vn",
+      "email": "admin@bbhomesservice.com",
       "hoursLabel": "Lễ tân",
       "hours": "24/7 · Nhận phòng 14:00 · Trả phòng 12:00",
       "mapNote": "Cách hồ Hoàn Kiếm 15 phút · Sân bay Nội Bài 35 phút"
@@ -297,15 +297,15 @@
     "about": "Chốn lưu trú boutique giữa con phố xanh Đào Tấn — nơi sự sang trọng nằm trong những điều giản dị được chăm chút kỹ lưỡng.",
     "contactTitle": "Liên hệ",
     "address": "Ngõ 82 Đào Tấn, Ba Đình, Hà Nội",
-    "phone": "+84 24 3760 8866",
-    "email": "stay@bbhomes.vn",
+    "phone": "+84 844 565 665",
+    "email": "admin@bbhomesservice.com",
     "hoursTitle": "Giờ đón khách",
-    "checkin": "Nhận phòng 14:00",
-    "checkout": "Trả phòng 12:00",
+    "checkin": "Nhận phòng xx:xx",
+    "checkout": "Trả phòng xx:xx",
     "reception": "Lễ tân 24/7",
     "navTitle": "Khám phá",
     "bookTitle": "Sẵn sàng cho Hà Nội?",
     "bookBody": "Gửi yêu cầu hôm nay, xác nhận trong 24 giờ.",
-    "copyright": "BB Homes. Mọi quyền được bảo lưu."
+    "copyright": "BB Homes. All rights reserved."
   }
 }

@@ -76,7 +76,17 @@ export function SiteFooter({ locale, dictionary }: { locale: Locale; dictionary:
 
       <div className="border-t border-ivory/10">
         <div className="site-container flex flex-col gap-4 py-7 text-[0.72rem] tracking-[0.08em] text-ivory/40 md:flex-row md:items-center md:justify-between">
-          <span>© {new Date().getFullYear()} {footer.copyright}</span>
+          <span>
+            © {new Date().getFullYear()} {footer.copyright} · Designed by{" "}
+            <a
+              href="https://www.facebook.com/nqh2904/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ivory/65 underline decoration-ivory/25 underline-offset-4 transition-colors hover:text-brass"
+            >
+              Hao
+            </a>
+          </span>
           <a href="#top" className="inline-flex items-center gap-2 transition-colors hover:text-brass">
             {dictionary.common.backTop}
             <ArrowUpRight size={13} aria-hidden="true" />

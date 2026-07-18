@@ -37,9 +37,9 @@
   },
   "home": {
     "stats": [
-      { "value": "04", "label": "プライベートな客室タイプ" },
-      { "value": "08", "label": "バーディンの中心に建つ8階建て" },
-      { "value": "01", "label": "軒下の居酒屋" }
+      { "value": "0x", "label": "プライベートな客室タイプ" },
+      { "value": "0x", "label": "バーディンの中心に建つ8階建て" },
+      { "value": "0x", "label": "軒下の居酒屋" }
     ],
     "intro": {
       "eyebrow": "BB Homes · Hanoi",
@@ -216,9 +216,9 @@
       "addressLabel": "住所",
       "address": "82番地 ダオタン通り、バーディン区、ハノイ",
       "phoneLabel": "電話",
-      "phone": "+84 24 3760 8866",
+      "phone": "+84 844 565 665",
       "emailLabel": "メール",
-      "email": "stay@bbhomes.vn",
+      "email": "admin@bbhomesservice.com",
       "hoursLabel": "フロント",
       "hours": "24時間対応 · チェックイン 14:00 · チェックアウト 12:00",
       "mapNote": "ホアンキエム湖まで15分 · ノイバイ空港まで35分"
@@ -297,8 +297,8 @@
     "about": "緑豊かなダオタン通りに佇むブティックステイ。丁寧に磨かれたシンプルさの中にこそ、本当の贅沢が宿ると信じています。",
     "contactTitle": "お問い合わせ",
     "address": "82番地 ダオタン通り、バーディン区、ハノイ",
-    "phone": "+84 24 3760 8866",
-    "email": "stay@bbhomes.vn",
+    "phone": "+84 844 565 665",
+    "email": "admin@bbhomesservice.com",
     "hoursTitle": "ご案内",
     "checkin": "チェックイン 14:00",
     "checkout": "チェックアウト 12:00",
