@@ -3,7 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 import type { Dictionary, Locale } from "@/lib/i18n";
 
@@ -36,9 +36,44 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
   }
 
   useEffect(() => {
-    document.documentElement.style.overflow = menuOpen ? "hidden" : "";
+    if (!menuOpen) return;
+
+    const html = document.documentElement;
+    const body = document.body;
+    const previousHtmlOverflow = html.style.overflow;
+    const previousHtmlTouchAction = html.style.touchAction;
+    const previousBodyOverflow = body.style.overflow;
+    const previousBodyTouchAction = body.style.touchAction;
+
+    html.style.overflow = "hidden";
+    html.style.touchAction = "none";
+    body.style.overflow = "hidden";
+    body.style.touchAction = "none";
+
     return () => {
-      document.documentElement.style.overflow = "";
+      html.style.overflow = previousHtmlOverflow;
+      html.style.touchAction = previousHtmlTouchAction;
+      body.style.overflow = previousBodyOverflow;
+      body.style.touchAction = previousBodyTouchAction;
+    };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+    const desktopQuery = window.matchMedia("(min-width: 1024px)");
+    const closeOnDesktop = (event: MediaQueryListEvent) => {
+      if (event.matches) setMenuOpen(false);
+    };
+
+    window.addEventListener("keydown", closeOnEscape);
+    desktopQuery.addEventListener("change", closeOnDesktop);
+    return () => {
+      window.removeEventListener("keydown", closeOnEscape);
+      desktopQuery.removeEventListener("change", closeOnDesktop);
     };
   }, [menuOpen]);
 
@@ -57,11 +92,12 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
   const solid = scrolled || menuOpen;
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,color,box-shadow] duration-500 ${
-        solid ? "bg-ivory/92 text-espresso shadow-[0_1px_0_rgba(17,16,9,0.08)] backdrop-blur-md" : "bg-transparent text-ivory"
-      }`}
-    >
+    <Fragment>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-[background-color,color,box-shadow] duration-500 ${
+          solid ? "bg-ivory/92 text-espresso shadow-[0_1px_0_rgba(17,16,9,0.08)] backdrop-blur-md" : "bg-transparent text-ivory"
+        }`}
+      >
       <div className={`site-container flex items-center justify-between transition-[height] duration-500 ${solid ? "h-[76px]" : "h-[104px]"}`}>
         <Link href={`/${locale}`} aria-label="BB Homes — Home" className="relative z-50 flex flex-col">
           <span className="font-display text-[1.35rem] leading-none tracking-[0.14em]">BB HOMES</span>
@@ -118,10 +154,14 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
         </button>
       </div>
 
-      {/* Mobile full-screen menu */}
+      </header>
+
+      {/* Kept outside the backdrop-filter header so fixed positioning remains
+          relative to the viewport in Safari after zoom. */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col justify-between bg-espresso px-7 pb-10 pt-32 text-ivory transition-[opacity,visibility] duration-400 lg:hidden ${
-          menuOpen ? "visible opacity-100" : "invisible opacity-0"
+        inert={!menuOpen}
+        className={`fixed inset-x-0 top-0 z-40 flex h-dvh max-w-full flex-col justify-between overflow-y-auto overscroll-contain bg-espresso px-7 pb-10 pt-32 text-ivory transition-[opacity,visibility] duration-400 lg:hidden ${
+          menuOpen ? "visible opacity-100" : "pointer-events-none invisible opacity-0"
         }`}
       >
         <nav aria-label="Mobile navigation" className="flex flex-col gap-1">
@@ -129,6 +169,7 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
             <Link
               key={link.href}
               href={link.href}
+              tabIndex={menuOpen ? undefined : -1}
               style={{ transitionDelay: menuOpen ? `${120 + index * 60}ms` : "0ms" }}
               className={`border-b border-ivory/10 py-4 font-display text-[1.7rem] transition-[opacity,transform] duration-500 ${
                 menuOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
@@ -138,13 +179,13 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center justify-between">
-          <Link href={switchPath} hrefLang={alternateLocale} className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-brass">
+        <div className="flex items-center justify-between gap-4">
+          <Link href={switchPath} hrefLang={alternateLocale} tabIndex={menuOpen ? undefined : -1} className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-brass">
             {common.language}
           </Link>
           <span className="text-[0.68rem] tracking-[0.22em] text-ivory/50">BA ĐÌNH · HANOI</span>
         </div>
       </div>
-    </header>
+    </Fragment>
   );
 }

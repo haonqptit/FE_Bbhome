@@ -13,7 +13,7 @@ type HeroSlideshowProps = {
   locale: Locale;
   hero: Dictionary["hero"];
   scrollLabel: string;
-  slides: { src: string; alt: string }[];
+  slides: { src: string; alt: string; positionClassName?: string }[];
 };
 
 function subscribeReducedMotion(callback: () => void) {
@@ -54,7 +54,7 @@ export function HeroSlideshow({ locale, hero, scrollLabel, slides }: HeroSlidesh
             fill
             priority={index === 0}
             sizes="100vw"
-            className="object-cover"
+            className={`object-cover ${slide.positionClassName ?? ""}`}
           />
         </div>
       ))}

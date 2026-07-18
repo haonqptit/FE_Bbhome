@@ -36,6 +36,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
     <html
       lang={lang}
       className={`${displayFont.variable} ${sansFont.variable} ${jaSerifFont.variable} ${jaSansFont.variable}`}
+      suppressHydrationWarning
     >
       <body className={lang === "ja" ? "locale-ja" : undefined}>
         <a className="skip-link" href="#main-content">

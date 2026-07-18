@@ -16,10 +16,12 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
     {
       src: "/ImageBbhomes/ImageHotelBasement/1.jpg",
       alt: locale === "vi" ? "Góc izakaya ấm cúng" : "あたたかな居酒屋の一角",
+      positionClassName: "object-[35%_center] lg:object-center",
     },
     {
       src: "/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_resize.jpg",
       alt: locale === "vi" ? "Mặt tiền BB Homes về đêm" : "夜のBB Homes外観",
+      positionClassName: "object-[72%_center] lg:object-center",
     },
     {
       src: "/ImageBbhomes/ImageRoom/802_BBHotel_resize.jpg",
@@ -120,10 +122,10 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
           </div>
 
           {/* Signature room — large card */}
-          <Reveal delay={150}>
+          <Reveal delay={150} className="min-w-0 max-w-full">
             <Link
               href={`/${locale}/rooms/${signature.id}`}
-              className="img-zoom group relative mt-16 block aspect-[16/8] min-h-[380px] overflow-hidden"
+              className="img-zoom group relative mt-16 block aspect-[4/5] min-w-0 max-w-full overflow-hidden sm:aspect-[16/10] lg:aspect-[16/8] lg:min-h-[380px]"
             >
               <Image
                 src={signature.cover}
@@ -132,16 +134,16 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
                 sizes="(max-width: 1023px) 92vw, 1320px"
               />
               <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(17,16,9,0.72)_0%,rgba(17,16,9,0.12)_55%)]" />
-              <div className="absolute inset-x-0 bottom-0 flex flex-col gap-4 p-7 text-ivory md:flex-row md:items-end md:justify-between md:p-12">
-                <div>
-                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.26em] text-brass-light">
+              <div className="absolute inset-x-0 bottom-0 flex min-w-0 flex-col gap-4 p-5 text-ivory sm:p-7 md:flex-row md:items-end md:justify-between md:p-12">
+                <div className="min-w-0">
+                  <p className="break-words text-[0.68rem] font-medium uppercase tracking-[0.26em] text-brass-light">
                     {home.rooms.signature} · {dictionary.rooms.items[signature.id].tagline}
                   </p>
                   <h3 className="display-title mt-3 text-[clamp(1.9rem,3.4vw,3rem)]">
                     {dictionary.rooms.items[signature.id].name}
                   </h3>
                 </div>
-                <div className="flex items-center gap-8">
+                <div className="flex min-w-0 flex-col items-start gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8 lg:flex-nowrap">
                   <span className="text-[0.85rem] text-ivory/85">
                     {common.from} <strong className="font-display text-[1.3rem]">{formatPrice(signature.priceFrom, locale)}</strong>
                     <span className="text-ivory/60">{common.perNight}</span>
