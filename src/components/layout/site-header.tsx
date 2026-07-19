@@ -143,15 +143,25 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
           </Link>
         </div>
 
-        <button
-          type="button"
-          aria-expanded={menuOpen}
-          aria-label={menuOpen ? common.close : common.menu}
-          onClick={() => setMenuOpen((open) => !open)}
-          className="relative z-50 grid h-11 w-11 place-items-center lg:hidden"
-        >
-          {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
-        </button>
+        <div className="relative z-50 flex items-center gap-1 lg:hidden">
+          <Link
+            href={switchPath}
+            hrefLang={alternateLocale}
+            aria-label={`${common.language}: ${alternateLocale.toUpperCase()}`}
+            className="grid h-11 min-w-11 place-items-center px-2 text-[0.72rem] font-medium uppercase tracking-[0.19em] transition-colors hover:text-brass"
+          >
+            {alternateLocale.toUpperCase()}
+          </Link>
+          <button
+            type="button"
+            aria-expanded={menuOpen}
+            aria-label={menuOpen ? common.close : common.menu}
+            onClick={() => setMenuOpen((open) => !open)}
+            className="grid h-11 w-11 place-items-center"
+          >
+            {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+          </button>
+        </div>
       </div>
 
       </header>
@@ -179,10 +189,7 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center justify-between gap-4">
-          <Link href={switchPath} hrefLang={alternateLocale} tabIndex={menuOpen ? undefined : -1} className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-brass">
-            {common.language}
-          </Link>
+        <div className="flex items-center justify-end">
           <span className="text-[0.68rem] tracking-[0.22em] text-ivory/50">BA ĐÌNH · HANOI</span>
         </div>
       </div>

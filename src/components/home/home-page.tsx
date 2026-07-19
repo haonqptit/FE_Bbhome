@@ -21,7 +21,8 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
     {
       src: "/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_resize.jpg",
       alt: locale === "vi" ? "Mặt tiền BB Homes về đêm" : "夜のBB Homes外観",
-      positionClassName: "object-[72%_center] lg:object-center",
+      positionClassName: "lg:object-center",
+      mobileContain: true,
     },
     {
       src: "/ImageBbhomes/ImageRoom/802_BBHotel_resize.jpg",
