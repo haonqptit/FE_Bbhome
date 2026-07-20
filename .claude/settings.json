@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git checkout -b hotfix/remove-izakaya)",
+      "PowerShell(git merge hotfix/layout-mobile)",
+      "PowerShell(npx tsc --noEmit)"
+    ]
+  }
+}

@@ -31,7 +31,7 @@
   "hero": {
     "eyebrow": "Boutique stay · Ba Đình · Hà Nội",
     "title": "Ở lại thật chậm,\nchạm vào Hà Nội.",
-    "description": "Một chốn nghỉ nhỏ ấm áp giữa con phố xanh — nơi mỗi ngày bắt đầu bằng ánh sáng dịu và kết thúc bên bữa tối izakaya dưới hiên nhà.",
+    "description": "Một chốn nghỉ nhỏ ấm áp giữa con phố xanh — nơi mỗi ngày bắt đầu bằng ánh sáng dịu và kết thúc trong sự yên tĩnh trọn vẹn.",
     "primary": "Khám phá phòng nghỉ",
     "secondary": "Câu chuyện của chúng tôi"
   },
@@ -39,7 +39,7 @@
     "stats": [
       { "value": "xx", "label": "Hạng phòng riêng tư" },
       { "value": "xx", "label": "Tầng giữa lòng Ba Đình" },
-      { "value": "xx", "label": "Izakaya dưới hiên nhà" }
+      { "value": "24/7", "label": "Lễ tân luôn sẵn sàng" }
     ],
     "intro": {
       "eyebrow": "BB Homes · Hanoi",
@@ -138,8 +138,7 @@
       "title": "Từ một ngôi nhà\ngiữa phố Đào Tấn",
       "paragraphs": [
         "BB Homes nằm trong con phố nhỏ rợp bóng cây của khu Đào Tấn — nơi nhịp sống Hà Nội chậm hơn một nhịp so với phố cổ tấp nập. Chúng tôi cải tạo ngôi nhà tám tầng này thành một chốn lưu trú boutique, giữ lại sự ấm áp của một mái nhà và thêm vào những tiện nghi của một khách sạn được chăm chút.",
-        "Mỗi căn phòng được thiết kế quanh ánh sáng tự nhiên: cửa kính lớn, rèm hai lớp, tông gỗ sáng và vải tự nhiên. Chúng tôi tin rằng sự sang trọng không nằm ở đèn chùm hay đá cẩm thạch, mà ở giấc ngủ thật sâu, vòi nước thật ấm và sự yên tĩnh thật trọn vẹn.",
-        "Dưới tầng trệt, góc izakaya nhỏ mang tinh thần Nhật Bản — di sản từ những vị khách Nhật đầu tiên đã gắn bó với BB Homes. Đó là nơi câu chuyện giữa chủ nhà và khách phương xa bắt đầu, bên chén rượu ấm và những món ăn giản dị."
+        "Mỗi căn phòng được thiết kế quanh ánh sáng tự nhiên: cửa kính lớn, rèm hai lớp, tông gỗ sáng và vải tự nhiên. Chúng tôi tin rằng sự sang trọng không nằm ở đèn chùm hay đá cẩm thạch, mà ở giấc ngủ thật sâu, vòi nước thật ấm và sự yên tĩnh thật trọn vẹn."
       ]
     },
     "values": {
@@ -154,7 +153,7 @@
     "space": {
       "eyebrow": "Không gian",
       "title": "Được thiết kế\nquanh ánh sáng",
-      "body": "X tầng nhà, x hạng phòng và một góc izakaya — tất cả xoay quanh thứ quý giá nhất của kiến trúc Hà Nội: ánh sáng ngày dịu dàng và những khoảng xanh bất chợt."
+      "body": "X tầng nhà và x hạng phòng — tất cả xoay quanh thứ quý giá nhất của kiến trúc Hà Nội: ánh sáng ngày dịu dàng và những khoảng xanh bất chợt."
     },
     "cta": {
       "title": "Đến và ở lại như ở nhà.",

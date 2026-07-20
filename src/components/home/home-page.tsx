@@ -14,8 +14,8 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
 
   const heroSlides = [
     {
-      src: "/ImageBbhomes/ImageHotelBasement/1.jpg",
-      alt: locale === "vi" ? "Góc izakaya ấm cúng" : "あたたかな居酒屋の一角",
+      src: "/ImageBbhomes/ImageRoom/801_BBHotel_resize.jpg",
+      alt: locale === "vi" ? "Suite tầng cao đón ánh ban mai" : "朝の光に包まれる高層階スイート",
       positionClassName: "object-[35%_center] lg:object-center",
     },
     {
@@ -187,50 +187,6 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
         </div>
       </section>
 
-      {/* Izakaya experience — dark section */}
-      <section className="overflow-hidden bg-oak py-24 text-ivory md:py-36">
-        <div className="site-container grid items-center gap-14 lg:grid-cols-[4fr_7fr] lg:gap-20">
-          <div className="relative z-10">
-            <Reveal>
-              <p className="eyebrow text-brass-light">{home.experience.eyebrow}</p>
-            </Reveal>
-            <Reveal delay={100}>
-              <h2 className="display-title mt-6 text-[clamp(2.1rem,3.8vw,3.3rem)]">{home.experience.title}</h2>
-            </Reveal>
-            <Reveal delay={200}>
-              <p className="mt-8 max-w-md text-[0.93rem] leading-8 text-ivory/65">{home.experience.body}</p>
-            </Reveal>
-            <Reveal delay={300}>
-              <Link href={`/${locale}/services`} className="text-link mt-11 inline-flex text-ivory">
-                {home.experience.link}
-                <ArrowRight size={15} aria-hidden="true" />
-              </Link>
-            </Reveal>
-          </div>
-
-          <div className="relative">
-            <Reveal>
-              <figure className="img-zoom relative aspect-[16/10] overflow-hidden">
-                <Image
-                  src="/ImageBbhomes/ImageHotelBasement/1.jpg"
-                  alt="Izakaya at BB Homes"
-                  fill
-                  sizes="(max-width: 1023px) 92vw, 58vw"
-                />
-              </figure>
-            </Reveal>
-            <Reveal delay={200}>
-              <figure className="img-zoom relative -mt-[18%] ml-auto mr-[-4%] aspect-square w-[38%] overflow-hidden border-[10px] border-oak">
-                <Image src="/ImageBbhomes/ImageHotelBasement/5.jpg" alt="Izakaya entrance" fill sizes="24vw" />
-              </figure>
-            </Reveal>
-            <p className="mt-5 text-right text-[0.62rem] uppercase tracking-[0.24em] text-ivory/45">
-              {home.experience.caption}
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Gallery mosaic preview */}
       <section className="bg-ivory py-24 md:py-36">
         <div className="site-container">
@@ -255,7 +211,7 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
             {[
               { src: "/ImageBbhomes/ImageRoom/802_BBHotel_09_resize.jpg", className: "md:col-span-2 md:row-span-2" },
               { src: "/ImageBbhomes/ImageRoom/302_BBHotel_03_resize.jpg", className: "" },
-              { src: "/ImageBbhomes/ImageHotelBasement/4.jpg", className: "md:row-span-2" },
+              { src: "/ImageBbhomes/ImageRoom/302_BBHotel_02_resize.jpg", className: "md:row-span-2" },
               { src: "/ImageBbhomes/ImageRoom/801_BBHotel_06_resize.jpg", className: "" },
             ].map((item, index) => (
               <Reveal key={item.src} delay={index * 110} className={item.className}>

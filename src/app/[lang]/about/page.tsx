@@ -18,7 +18,6 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/about">): 
 const storyImages = [
   "/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_02_resize.jpg",
   "/ImageBbhomes/ImageRoom/302_BBHotel_06_resize.jpg",
-  "/ImageBbhomes/ImageHotelBasement/2.jpg",
 ];
 
 export default async function AboutPage({ params }: PageProps<"/[lang]/about">) {
