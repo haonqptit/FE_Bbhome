@@ -13,12 +13,7 @@ type HeroSlideshowProps = {
   locale: Locale;
   hero: Dictionary["hero"];
   scrollLabel: string;
-  slides: {
-    src: string;
-    alt: string;
-    positionClassName?: string;
-    mobileContain?: boolean;
-  }[];
+  slides: { src: string; alt: string; positionClassName?: string }[];
 };
 
 function subscribeReducedMotion(callback: () => void) {
@@ -53,25 +48,13 @@ export function HeroSlideshow({ locale, hero, scrollLabel, slides }: HeroSlidesh
             index === active ? "hero-slide-active opacity-100" : "opacity-0"
           }`}
         >
-          {slide.mobileContain ? (
-            <Image
-              src={slide.src}
-              alt=""
-              fill
-              aria-hidden="true"
-              sizes="100vw"
-              className="scale-110 object-cover blur-xl lg:hidden"
-            />
-          ) : null}
           <Image
             src={slide.src}
             alt={slide.alt}
             fill
             priority={index === 0}
             sizes="100vw"
-            className={`${slide.mobileContain ? "hero-mobile-contain object-contain lg:object-cover" : "object-cover"} ${
-              slide.positionClassName ?? ""
-            }`}
+            className={`object-cover ${slide.positionClassName ?? ""}`}
           />
         </div>
       ))}

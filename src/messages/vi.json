@@ -221,7 +221,7 @@
       "phoneLabel": "Hotline",
       "phone": "084 456 5665",
       "emailLabel": "Email",
-      "email": "stay@bbhomes.vn",
+      "email": "admin@bbhomesserviced.com",
       "hoursLabel": "Lễ tân",
       "hours": "24/7 · Nhận phòng 14:00 · Trả phòng 12:00",
       "mapNote": "Cách hồ Hoàn Kiếm 15 phút · Sân bay Nội Bài 35 phút"
@@ -301,7 +301,7 @@
     "contactTitle": "Liên hệ",
     "address": "95/12 Đào Tấn, Ba Đình, Hà Nội",
     "phone": "084 456 5665",
-    "email": "stay@bbhomes.vn",
+    "email": "admin@bbhomesserviced.com",
     "hoursTitle": "Giờ đón khách",
     "checkin": "Nhận phòng 14:00",
     "checkout": "Trả phòng 12:00",
@@ -309,6 +309,6 @@
     "navTitle": "Khám phá",
     "bookTitle": "Sẵn sàng cho Hà Nội?",
     "bookBody": "Gửi yêu cầu hôm nay, xác nhận trong 24 giờ.",
-    "copyright": "BB Homes. Mọi quyền được bảo lưu."
+    "copyright": "BB Homes. All rights reserved."
   }
 }

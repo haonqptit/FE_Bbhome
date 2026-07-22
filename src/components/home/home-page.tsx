@@ -14,18 +14,16 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
 
   const heroSlides = [
     {
-      src: "/bbhomes/facade/day.png",
-      alt: locale === "vi" ? "Mặt tiền BB Homes ban ngày" : "昼のBB Homes外観",
+      src: "/ImageBbhomes/ImageRoom/301_BBHotel_resize.jpg",
+      alt: locale === "vi" ? "Phòng 301 tại BB Homes" : "BB Homes 301号室",
     },
     {
-      src: "/bbhomes/premier/cover.png",
-      alt: locale === "vi" ? "Phòng Premier ngập ánh sáng" : "光あふれるPremierルーム",
+      src: "/ImageBbhomes/ImageRoom/302_BBHotel_resize.jpg",
+      alt: locale === "vi" ? "Phòng 302 tại BB Homes" : "BB Homes 302号室",
     },
     {
-      src: "/bbhomes/facade/night.png",
-      alt: locale === "vi" ? "Mặt tiền BB Homes lên đèn về đêm" : "夜に灯るBB Homes外観",
-      positionClassName: "object-[center_30%] lg:object-center",
-      mobileContain: true,
+      src: "/ImageBbhomes/ImageRoom/801_BBHotel_resize.jpg",
+      alt: locale === "vi" ? "Phòng 801 tại BB Homes" : "BB Homes 801号室",
     },
   ];
 
@@ -226,7 +224,7 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
       {/* Closing CTA */}
       <section className="relative flex min-h-[72svh] items-center overflow-hidden text-ivory">
         <Image
-          src="/bbhomes/facade/night.png"
+          src="/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_03_resize.jpg"
           alt="BB Homes Hanoi"
           fill
           sizes="100vw"

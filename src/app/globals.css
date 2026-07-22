@@ -178,12 +178,6 @@ img {
   animation: hero-kenburns 8s ease-out both;
 }
 
-@media (max-width: 1023px) {
-  .hero-slide-active img.hero-mobile-contain {
-    animation: none;
-  }
-}
-
 @keyframes hero-rise {
   from {
     opacity: 0;
