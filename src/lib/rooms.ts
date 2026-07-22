@@ -1,93 +1,67 @@
-export const roomIds = ["studio-802", "cityview-801", "balcony-302", "cozy-301"] as const;
+export const roomIds = ["premier", "balcony", "deluxe", "standard"] as const;
 export type RoomId = (typeof roomIds)[number];
 
 export type Room = {
   id: RoomId;
-  number: string;
-  floor: number;
+  /** decorative label shown as the ghost number on the rooms page */
+  label: string;
   sizeM2: number;
   guests: number;
-  priceFrom: number; // VND / night
+  /** VND / night — đã gồm thuế & phí (tax & fees included) */
+  priceFrom: number;
   cover: string;
   images: string[];
 };
 
-const IMG = "/ImageBbhomes/ImageRoom";
+const base = (folder: string) => ({
+  cover: `/bbhomes/${folder}/cover.png`,
+  images: [
+    `/bbhomes/${folder}/cover.png`,
+    `/bbhomes/${folder}/01.png`,
+    `/bbhomes/${folder}/02.png`,
+    `/bbhomes/${folder}/03.png`,
+    `/bbhomes/${folder}/04.png`,
+    `/bbhomes/${folder}/05.png`,
+  ],
+});
 
 export const rooms: Record<RoomId, Room> = {
-  "studio-802": {
-    id: "studio-802",
-    number: "802",
-    floor: 8,
-    sizeM2: 45,
+  premier: {
+    id: "premier",
+    label: "08",
+    sizeM2: 32,
     guests: 3,
-    priceFrom: 1850000,
-    cover: `${IMG}/802_BBHotel_resize.jpg`,
-    images: [
-      `${IMG}/802_BBHotel_resize.jpg`,
-      `${IMG}/802_BBHotel_02_resize.jpg`,
-      `${IMG}/802_BBHotel_03_resize.jpg`,
-      `${IMG}/802_BBHotel_05_resize.jpg`,
-      `${IMG}/802_BBHotel_07_resize.jpg`,
-      `${IMG}/802_BBHotel_09_resize.jpg`,
-      `${IMG}/802_BBHotel_11_resize.jpg`,
-      `${IMG}/802_BBHotel_13_resize.jpg`,
-      `${IMG}/802_BBHotel_15_resize.jpg`,
-      `${IMG}/802_BBHotel_16_resize.jpg`,
-    ],
+    priceFrom: 880000,
+    ...base("premier"),
   },
-  "cityview-801": {
-    id: "cityview-801",
-    number: "801",
-    floor: 8,
-    sizeM2: 38,
+  balcony: {
+    id: "balcony",
+    label: "04",
+    sizeM2: 26,
     guests: 2,
-    priceFrom: 1450000,
-    cover: `${IMG}/801_BBHotel_resize.jpg`,
-    images: [
-      `${IMG}/801_BBHotel_resize.jpg`,
-      `${IMG}/801_BBHotel_02_resize.jpg`,
-      `${IMG}/801_BBHotel_03_resize.jpg`,
-      `${IMG}/801_BBHotel_04_resize.jpg`,
-      `${IMG}/801_BBHotel_05_resize.jpg`,
-      `${IMG}/801_BBHotel_06_resize.jpg`,
-    ],
+    priceFrom: 860000,
+    ...base("balcony"),
   },
-  "balcony-302": {
-    id: "balcony-302",
-    number: "302",
-    floor: 3,
-    sizeM2: 28,
+  deluxe: {
+    id: "deluxe",
+    label: "06",
+    sizeM2: 24,
     guests: 2,
-    priceFrom: 1250000,
-    cover: `${IMG}/302_BBHotel_resize.jpg`,
-    images: [
-      `${IMG}/302_BBHotel_resize.jpg`,
-      `${IMG}/302_BBHotel_02_resize.jpg`,
-      `${IMG}/302_BBHotel_03_resize.jpg`,
-      `${IMG}/302_BBHotel_04_resize.jpg`,
-      `${IMG}/302_BBHotel_05_resize.jpg`,
-      `${IMG}/302_BBHotel_06_resize.jpg`,
-    ],
+    priceFrom: 830000,
+    ...base("deluxe"),
   },
-  "cozy-301": {
-    id: "cozy-301",
-    number: "301",
-    floor: 3,
-    sizeM2: 22,
+  standard: {
+    id: "standard",
+    label: "02",
+    sizeM2: 20,
     guests: 2,
-    priceFrom: 950000,
-    cover: `${IMG}/301_BBHotel_resize.jpg`,
-    // Mock: phòng 301 hiện chỉ có 1 ảnh thật, mượn tạm 2 ảnh 302 cùng phong cách
-    images: [
-      `${IMG}/301_BBHotel_resize.jpg`,
-      `${IMG}/302_BBHotel_05_resize.jpg`,
-      `${IMG}/302_BBHotel_03_resize.jpg`,
-    ],
+    priceFrom: 800000,
+    ...base("standard"),
   },
 };
 
-export const roomOrder: RoomId[] = ["studio-802", "cityview-801", "balcony-302", "cozy-301"];
+// Signature (Premier) first → down to Standard
+export const roomOrder: RoomId[] = ["premier", "balcony", "deluxe", "standard"];
 
 export function isRoomId(value: string): value is RoomId {
   return (roomIds as readonly string[]).includes(value);

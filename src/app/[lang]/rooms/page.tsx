@@ -28,7 +28,7 @@ export default async function RoomsPage({ params }: PageProps<"/[lang]/rooms">) 
         eyebrow={roomsCopy.hero.eyebrow}
         title={roomsCopy.hero.title}
         description={roomsCopy.hero.description}
-        image="/ImageBbhomes/ImageRoom/802_BBHotel_02_resize.jpg"
+        image="/bbhomes/premier/cover.png"
         imageAlt={roomsCopy.hero.eyebrow}
       />
 
@@ -50,7 +50,7 @@ export default async function RoomsPage({ params }: PageProps<"/[lang]/rooms">) 
                   reversed ? "left-6" : "right-6"
                 }`}
               >
-                {room.number}
+                {room.label}
               </span>
 
               <div

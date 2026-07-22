@@ -35,7 +35,7 @@ export default async function BookingPage({ params, searchParams }: PageProps<"/
         eyebrow={booking.hero.eyebrow}
         title={booking.hero.title}
         description={booking.hero.description}
-        image="/ImageBbhomes/ImageRoom/801_BBHotel_05_resize.jpg"
+        image="/bbhomes/deluxe/cover.png"
         imageAlt={booking.hero.eyebrow}
       />
 

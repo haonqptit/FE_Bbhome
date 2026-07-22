@@ -1,4 +1,4 @@
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,44 +27,45 @@ export default async function ServicesPage({ params }: PageProps<"/[lang]/servic
         eyebrow={services.hero.eyebrow}
         title={services.hero.title}
         description={services.hero.description}
-        image="/ImageBbhomes/ImageHotelBasement/3.jpg"
+        image="/bbhomes/facade/night.png"
         imageAlt={services.hero.eyebrow}
       />
 
-      {/* Izakaya — signature service, dark editorial */}
+      {/* Welcome — signature, dark editorial */}
       <section className="overflow-hidden bg-oak py-24 text-ivory md:py-36">
         <div className="site-container grid items-center gap-14 lg:grid-cols-[6fr_5fr] lg:gap-24">
           <div className="relative">
             <Reveal>
               <figure className="img-zoom relative aspect-[4/3] overflow-hidden">
-                <Image src="/ImageBbhomes/ImageHotelBasement/1.jpg" alt="Izakaya BB Homes" fill sizes="(max-width: 1023px) 92vw, 52vw" />
+                <Image src="/bbhomes/facade/day.png" alt="BB Homes" fill sizes="(max-width: 1023px) 92vw, 52vw" />
               </figure>
             </Reveal>
             <Reveal delay={180}>
               <figure className="img-zoom relative -mt-[22%] ml-[52%] aspect-[3/4] w-[42%] overflow-hidden border-[10px] border-oak">
-                <Image src="/ImageBbhomes/ImageHotelBasement/4.jpg" alt="" fill sizes="24vw" />
+                <Image src="/bbhomes/amenities/kit.png" alt="" fill sizes="24vw" />
               </figure>
             </Reveal>
           </div>
 
           <div>
             <Reveal>
-              <p className="eyebrow text-brass-light">{services.izakaya.eyebrow}</p>
+              <p className="eyebrow text-brass-light">{services.welcome.eyebrow}</p>
             </Reveal>
             <Reveal delay={100}>
-              <h2 className="display-title mt-6 text-[clamp(2.1rem,3.8vw,3.3rem)]">{services.izakaya.title}</h2>
+              <h2 className="display-title mt-6 text-[clamp(2.1rem,3.8vw,3.3rem)]">{services.welcome.title}</h2>
             </Reveal>
             <Reveal delay={200}>
-              <p className="mt-8 max-w-lg text-[0.94rem] leading-8 text-ivory/65">{services.izakaya.body}</p>
+              <p className="mt-8 max-w-lg text-[0.94rem] leading-8 text-ivory/65">{services.welcome.body}</p>
             </Reveal>
-            <Reveal delay={300}>
-              <p className="mt-9 flex items-center gap-3 text-[0.82rem] tracking-[0.06em] text-brass-light">
-                <Clock size={15} aria-hidden="true" />
-                {services.izakaya.hours}
-              </p>
-            </Reveal>
-            <Reveal delay={380}>
-              <p className="mt-4 border-l border-brass pl-5 text-[0.84rem] leading-7 text-ivory/55">{services.izakaya.note}</p>
+            <Reveal delay={320}>
+              <ul className="mt-9 flex flex-col gap-4">
+                {services.welcome.points.map((point) => (
+                  <li key={point} className="flex items-start gap-3.5 text-[0.88rem] leading-7 text-ivory/80">
+                    <Check size={17} className="mt-0.5 shrink-0 text-brass-light" aria-hidden="true" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </Reveal>
           </div>
         </div>

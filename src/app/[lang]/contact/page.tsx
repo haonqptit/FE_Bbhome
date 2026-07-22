@@ -35,7 +35,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
         eyebrow={contact.hero.eyebrow}
         title={contact.hero.title}
         description={contact.hero.description}
-        image="/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_02_resize.jpg"
+        image="/bbhomes/facade/night.png"
         imageAlt={contact.hero.eyebrow}
       />
 
@@ -69,7 +69,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
             <Reveal delay={300}>
               <figure className="img-zoom relative mt-10 aspect-[16/9] overflow-hidden">
                 <Image
-                  src="/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_03_resize.jpg"
+                  src="/bbhomes/facade/day.png"
                   alt={contact.info.address}
                   fill
                   sizes="(max-width: 1023px) 92vw, 44vw"

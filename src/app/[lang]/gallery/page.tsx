@@ -27,7 +27,7 @@ export default async function GalleryPage({ params }: PageProps<"/[lang]/gallery
         eyebrow={gallery.hero.eyebrow}
         title={gallery.hero.title}
         description={gallery.hero.description}
-        image="/ImageBbhomes/ImageRoom/802_BBHotel_09_resize.jpg"
+        image="/bbhomes/balcony/cover.png"
         imageAlt={gallery.hero.eyebrow}
       />
 

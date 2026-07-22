@@ -8,7 +8,7 @@ import type { GalleryCategory, GalleryItem } from "@/lib/gallery";
 
 type GalleryGridProps = {
   items: GalleryItem[];
-  filters: { all: string; rooms: string; spaces: string; izakaya: string };
+  filters: { all: string; rooms: string; spaces: string; details: string };
   hint: string;
   labels: { close: string; next: string; prev: string };
 };
@@ -29,7 +29,7 @@ export function GalleryGrid({ items, filters, hint, labels }: GalleryGridProps) 
     alt: `BB Homes — ${filters[item.category]} ${String(index + 1).padStart(2, "0")}`,
   }));
 
-  const filterKeys: Filter[] = ["all", "rooms", "spaces", "izakaya"];
+  const filterKeys: Filter[] = ["all", "rooms", "spaces", "details"];
 
   return (
     <div>

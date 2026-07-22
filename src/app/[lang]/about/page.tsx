@@ -16,8 +16,9 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/about">): 
 }
 
 const storyImages = [
-  "/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_02_resize.jpg",
-  "/ImageBbhomes/ImageRoom/302_BBHotel_06_resize.jpg",
+  "/bbhomes/facade/night.png",
+  "/bbhomes/deluxe/cover.png",
+  "/bbhomes/amenities/kit.png",
 ];
 
 export default async function AboutPage({ params }: PageProps<"/[lang]/about">) {
@@ -32,7 +33,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
         eyebrow={about.hero.eyebrow}
         title={about.hero.title}
         description={about.hero.description}
-        image="/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_resize.jpg"
+        image="/bbhomes/facade/day.png"
         imageAlt={about.hero.eyebrow}
       />
 
@@ -124,12 +125,12 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
           <div className="grid grid-cols-2 gap-5">
             <Reveal>
               <figure className="img-zoom relative aspect-[3/4] overflow-hidden">
-                <Image src="/ImageBbhomes/ImageRoom/801_BBHotel_03_resize.jpg" alt="" fill sizes="(max-width: 1023px) 46vw, 28vw" />
+                <Image src="/bbhomes/standard/cover.png" alt="" fill sizes="(max-width: 1023px) 46vw, 28vw" />
               </figure>
             </Reveal>
             <Reveal delay={160}>
               <figure className="img-zoom relative mt-12 aspect-[3/4] overflow-hidden">
-                <Image src="/ImageBbhomes/ImageRoom/802_BBHotel_11_resize.jpg" alt="" fill sizes="(max-width: 1023px) 46vw, 28vw" />
+                <Image src="/bbhomes/premier/01.png" alt="" fill sizes="(max-width: 1023px) 46vw, 28vw" />
               </figure>
             </Reveal>
           </div>

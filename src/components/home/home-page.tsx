@@ -14,19 +14,18 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
 
   const heroSlides = [
     {
-      src: "/ImageBbhomes/ImageRoom/801_BBHotel_resize.jpg",
-      alt: locale === "vi" ? "Suite tầng cao đón ánh ban mai" : "朝の光に包まれる高層階スイート",
-      positionClassName: "object-[35%_center] lg:object-center",
+      src: "/bbhomes/facade/day.png",
+      alt: locale === "vi" ? "Mặt tiền BB Homes ban ngày" : "昼のBB Homes外観",
     },
     {
-      src: "/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_resize.jpg",
-      alt: locale === "vi" ? "Mặt tiền BB Homes về đêm" : "夜のBB Homes外観",
-      positionClassName: "lg:object-center",
+      src: "/bbhomes/premier/cover.png",
+      alt: locale === "vi" ? "Phòng Premier ngập ánh sáng" : "光あふれるPremierルーム",
+    },
+    {
+      src: "/bbhomes/facade/night.png",
+      alt: locale === "vi" ? "Mặt tiền BB Homes lên đèn về đêm" : "夜に灯るBB Homes外観",
+      positionClassName: "object-[center_30%] lg:object-center",
       mobileContain: true,
-    },
-    {
-      src: "/ImageBbhomes/ImageRoom/802_BBHotel_resize.jpg",
-      alt: locale === "vi" ? "Signature Studio ngập ánh sáng" : "光あふれるシグネチャースタジオ",
     },
   ];
 
@@ -78,8 +77,8 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
             <Reveal>
               <figure className="img-zoom relative ml-auto aspect-[4/5] w-[82%] overflow-hidden">
                 <Image
-                  src="/ImageBbhomes/ImageRoom/302_BBHotel_05_resize.jpg"
-                  alt={locale === "vi" ? "Không gian phòng nghỉ BB Homes" : "BB Homesの客室"}
+                  src="/bbhomes/balcony/cover.png"
+                  alt={locale === "vi" ? "Phòng Balcony ngập khoảng xanh" : "緑に包まれるBalconyルーム"}
                   fill
                   sizes="(max-width: 1023px) 78vw, 44vw"
                 />
@@ -88,8 +87,8 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
             <Reveal delay={200}>
               <figure className="img-zoom relative -mt-[26%] aspect-[3/4] w-[46%] overflow-hidden border-[10px] border-ivory">
                 <Image
-                  src="/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_02_resize.jpg"
-                  alt={locale === "vi" ? "Mặt tiền BB Homes giữa phố xanh" : "緑の通りにあるBB Homes"}
+                  src="/bbhomes/facade/night.png"
+                  alt={locale === "vi" ? "Mặt tiền BB Homes lên đèn về đêm" : "夜に灯るBB Homes外観"}
                   fill
                   sizes="(max-width: 1023px) 42vw, 24vw"
                 />
@@ -209,10 +208,10 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
 
           <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-5" style={{ gridAutoRows: "minmax(160px, 1fr)" }}>
             {[
-              { src: "/ImageBbhomes/ImageRoom/802_BBHotel_09_resize.jpg", className: "md:col-span-2 md:row-span-2" },
-              { src: "/ImageBbhomes/ImageRoom/302_BBHotel_03_resize.jpg", className: "" },
-              { src: "/ImageBbhomes/ImageRoom/302_BBHotel_02_resize.jpg", className: "md:row-span-2" },
-              { src: "/ImageBbhomes/ImageRoom/801_BBHotel_06_resize.jpg", className: "" },
+              { src: "/bbhomes/premier/cover.png", className: "md:col-span-2 md:row-span-2" },
+              { src: "/bbhomes/deluxe/cover.png", className: "" },
+              { src: "/bbhomes/facade/night.png", className: "md:row-span-2" },
+              { src: "/bbhomes/balcony/cover.png", className: "" },
             ].map((item, index) => (
               <Reveal key={item.src} delay={index * 110} className={item.className}>
                 <figure className="img-zoom relative h-full min-h-[160px] w-full overflow-hidden">
@@ -227,11 +226,11 @@ export function HomePage({ locale, dictionary }: { locale: Locale; dictionary: D
       {/* Closing CTA */}
       <section className="relative flex min-h-[72svh] items-center overflow-hidden text-ivory">
         <Image
-          src="/ImageBbhomes/ImageRoom/Ngoaicanh_BBHotel_03_resize.jpg"
+          src="/bbhomes/facade/night.png"
           alt="BB Homes Hanoi"
           fill
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-[center_35%]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(17,16,9,0.82)_0%,rgba(17,16,9,0.35)_100%)]" />
         <div className="site-container relative z-10 py-28">

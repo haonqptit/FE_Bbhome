@@ -1,4 +1,4 @@
-export type GalleryCategory = "rooms" | "spaces" | "izakaya";
+export type GalleryCategory = "rooms" | "spaces" | "details";
 
 export type GalleryItem = {
   src: string;
@@ -7,26 +7,23 @@ export type GalleryItem = {
   tall?: boolean;
 };
 
-const ROOM = "/ImageBbhomes/ImageRoom";
-const BASEMENT = "/ImageBbhomes/ImageHotelBasement";
-
 export const galleryItems: GalleryItem[] = [
-  { src: `${ROOM}/802_BBHotel_resize.jpg`, category: "rooms", tall: true },
-  { src: `${BASEMENT}/1.jpg`, category: "izakaya" },
-  { src: `${ROOM}/302_BBHotel_02_resize.jpg`, category: "rooms" },
-  { src: `${ROOM}/Ngoaicanh_BBHotel_resize.jpg`, category: "spaces", tall: true },
-  { src: `${ROOM}/801_BBHotel_02_resize.jpg`, category: "rooms" },
-  { src: `${BASEMENT}/4.jpg`, category: "izakaya", tall: true },
-  { src: `${ROOM}/802_BBHotel_05_resize.jpg`, category: "rooms" },
-  { src: `${ROOM}/302_BBHotel_05_resize.jpg`, category: "rooms", tall: true },
-  { src: `${BASEMENT}/2.jpg`, category: "izakaya" },
-  { src: `${ROOM}/Ngoaicanh_BBHotel_02_resize.jpg`, category: "spaces" },
-  { src: `${ROOM}/801_BBHotel_04_resize.jpg`, category: "rooms", tall: true },
-  { src: `${ROOM}/802_BBHotel_09_resize.jpg`, category: "rooms" },
-  { src: `${BASEMENT}/5.jpg`, category: "izakaya" },
-  { src: `${ROOM}/302_BBHotel_03_resize.jpg`, category: "rooms" },
-  { src: `${ROOM}/Ngoaicanh_BBHotel_03_resize.jpg`, category: "spaces", tall: true },
-  { src: `${ROOM}/801_BBHotel_06_resize.jpg`, category: "rooms" },
-  { src: `${BASEMENT}/3.jpg`, category: "izakaya", tall: true },
-  { src: `${ROOM}/802_BBHotel_12_resize.jpg`, category: "rooms" },
+  { src: "/bbhomes/facade/night.png", category: "spaces", tall: true },
+  { src: "/bbhomes/premier/cover.png", category: "rooms" },
+  { src: "/bbhomes/balcony/cover.png", category: "rooms", tall: true },
+  { src: "/bbhomes/amenities/kit.png", category: "details" },
+  { src: "/bbhomes/deluxe/cover.png", category: "rooms" },
+  { src: "/bbhomes/facade/day.png", category: "spaces", tall: true },
+  { src: "/bbhomes/standard/01.png", category: "rooms", tall: true },
+  { src: "/bbhomes/premier/01.png", category: "rooms" },
+  { src: "/bbhomes/amenities/tray.png", category: "details" },
+  { src: "/bbhomes/facade/lobby-1.png", category: "spaces" },
+  { src: "/bbhomes/balcony/01.png", category: "rooms", tall: true },
+  { src: "/bbhomes/deluxe/02.png", category: "rooms" },
+  { src: "/bbhomes/standard/02.png", category: "details", tall: true },
+  { src: "/bbhomes/premier/03.png", category: "rooms" },
+  { src: "/bbhomes/facade/lobby-2.png", category: "spaces", tall: true },
+  { src: "/bbhomes/balcony/03.png", category: "rooms" },
+  { src: "/bbhomes/deluxe/04.png", category: "rooms", tall: true },
+  { src: "/bbhomes/premier/04.png", category: "rooms" },
 ];

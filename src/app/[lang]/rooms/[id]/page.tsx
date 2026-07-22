@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, BedDouble, Building2, Check, Expand, Eye, Users } from "lucide-react";
+import { ArrowLeft, ArrowRight, BedDouble, Check, Expand, Eye, Users } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -40,7 +40,6 @@ export default async function RoomDetailPage({ params }: PageProps<"/[lang]/room
     { icon: Users, label: common.guests, value: String(room.guests) },
     { icon: Expand, label: common.size, value: `${room.sizeM2} m²` },
     { icon: BedDouble, label: common.bed, value: copy.bedType },
-    { icon: Building2, label: common.floor, value: String(room.floor) },
     { icon: Eye, label: common.view, value: copy.viewType },
   ];
 
@@ -70,7 +69,7 @@ export default async function RoomDetailPage({ params }: PageProps<"/[lang]/room
 
       {/* Spec bar */}
       <section className="border-b border-line bg-ivory">
-        <div className="site-container grid grid-cols-2 divide-line sm:grid-cols-3 lg:grid-cols-5 lg:divide-x">
+        <div className="site-container grid grid-cols-2 divide-line sm:grid-cols-4 lg:divide-x">
           {specs.map((spec) => (
             <div key={spec.label} className="flex items-center gap-4 px-2 py-7 lg:justify-center">
               <spec.icon size={19} strokeWidth={1.4} className="shrink-0 text-brass" aria-hidden="true" />
@@ -115,6 +114,7 @@ export default async function RoomDetailPage({ params }: PageProps<"/[lang]/room
                   {formatPrice(room.priceFrom, lang)}
                   <span className="ml-1 font-sans text-[0.8rem] text-stone">{common.perNight}</span>
                 </p>
+                <p className="mt-2 text-[0.72rem] text-stone">{detail.priceNote}</p>
                 <h2 className="mt-8 font-display text-[1.15rem]">{detail.bookTitle}</h2>
                 <p className="mt-3 text-[0.85rem] leading-7 text-stone">{detail.bookBody}</p>
                 <Link href={`/${lang}/booking?room=${id}`} className="btn btn-gold mt-8 w-full">
